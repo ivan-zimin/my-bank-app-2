@@ -1,0 +1,36 @@
+###
+GET http://localhost:8090/healthcheck
+
+###
+GET http://localhost:8070/healthcheck
+
+###
+GET http://localhost:8071/healthcheck
+
+###
+GET http://localhost:8090/create/1
+
+###
+GET http://localhost:8090/create/2
+
+###
+GET http://localhost:8090/accrue/1/1000
+
+###
+GET http://localhost:8090/withdraw/1/200
+
+###
+GET http://localhost:8070/account_get/1
+
+###
+GET http://localhost:8070/account_get/2
+
+###
+POST http://localhost:8090/transfer
+Content-Type: application/json
+
+{
+    "from": 1,
+    "to": 2,
+    "amount": 800
+}
