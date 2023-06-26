@@ -1,0 +1,25 @@
+[debug] > Exec(;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/5h/l6pj_yws2xqc_symgc6stfnh0000gn/T/sbt-structure2.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers, resolveSbtClassifiers");apply -cp "/Users/ivan/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/231.9011.34/IntelliJ IDEA.app.plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2023.1.0/sbt-structure-extractor-2023.1.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure, Some(109b21f5-e3aa-440b-9430-5b580ffe6ce2), Some(CommandSource(console0)))
+[debug] > Exec(set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/5h/l6pj_yws2xqc_symgc6stfnh0000gn/T/sbt-structure2.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers, resolveSbtClassifiers"), None, Some(CommandSource(console0)))
+[info] Defining Global / sbtStructureOptions, Global / sbtStructureOutputFile and 1 others.
+[info] The new values will be used by cleanKeepGlobs
+[info] 	Run `last` for details.
+[debug] Defining 
+[debug] 	Global / sbtStructureOptions
+[debug] 	Global / sbtStructureOutputFile
+[debug] 	history
+[debug] 	shellPrompt
+[debug] 
+[debug] The new values will be used by 
+[debug] 	cleanKeepGlobs
+[info] Reapplying settings...
+[info] set current project to fee (in build file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/fee/)
+[debug] > Exec(apply -cp "/Users/ivan/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/231.9011.34/IntelliJ IDEA.app.plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2023.1.0/sbt-structure-extractor-2023.1.0.jar" org.jetbrains.sbt.CreateTasks, None, Some(CommandSource(console0)))
+[info] Applying State transformations org.jetbrains.sbt.CreateTasks from /Users/ivan/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/231.9011.34/IntelliJ IDEA.app.plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2023.1.0/sbt-structure-extractor-2023.1.0.jar
+[info] Reapplying settings...
+[info] set current project to fee (in build file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/fee/)
+[debug] > Exec(preferScala2, None, Some(CommandSource(console0)))
+[debug] > Exec(*/*:dumpStructure, None, Some(CommandSource(console0)))
+[debug] Evaluating tasks: Global / dumpStructure
+[warn] sbt 0.13 shell syntax is deprecated; use slash syntax instead: Global / dumpStructure
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] scala-library-2.12.17-sources.jar no longer exists at /C:/Users/SERG/AppData/Local/Coursier/Cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.17/scala-library-2.12.17-sources.jar

@@ -10,34 +10,34 @@ import misis.repository.AccountRepository
 import scala.concurrent.{ExecutionContext, Future}
 
 class AccountStreams(repository: AccountRepository)(implicit val system: ActorSystem, executionContext: ExecutionContext)
-    extends WithKafka {
+  extends WithKafka {
 
-    def group = s"account-${repository.startAccountId}"
+  def group = s"account-${repository.startAccountId}"
 
-    kafkaSource[AccountUpdate]
-        .filter(command => repository.contains(command.accountId))
-        .map { command =>
-            repository.updateAccount(command.accountId, command.value)
-        }
-        .to(kafkaSink)
-        .run()
+  kafkaSource[AccountUpdate]
+    .filter(command => repository.contains(command.accountId))
+    .map { command =>
+      repository.updateAccount(command.accountId, command.value)
+    }
+    .to(kafkaSink)
+    .run()
 
-    kafkaSource[AccountCreate]
-        .filter(command =>
-            command.accountId >= repository.startAccountId &&
-              command.accountId < repository.endAccountId)
-        .map { command =>
-            repository.createAccount(command.accountId)
-        }
-        .to(kafkaSink)
-        .run()
+  kafkaSource[AccountCreate]
+    .filter(command =>
+      command.accountId >= repository.startAccountId &&
+        command.accountId < repository.endAccountId)
+    .map { command =>
+      repository.createAccount(command.accountId)
+    }
+    .to(kafkaSink)
+    .run()
 
-    kafkaSource[AccountUpdated]
-        .filter(event => repository.contains(event.accountId))
-        .map { event =>
-            repository.printUpdateResult(event)
-            event
-        }
-        .to(Sink.ignore)
-        .run()
+  kafkaSource[AccountUpdated]
+    .filter(event => repository.contains(event.accountId))
+    .map { event =>
+      repository.printUpdateResult(event)
+      event
+    }
+    .to(Sink.ignore)
+    .run()
 }

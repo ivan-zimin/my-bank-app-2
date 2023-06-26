@@ -21,25 +21,25 @@ class OperationRoute(streams: OperationStreams, repository: OperationRepository)
         (path("healthcheck") & get) {
             complete("ok")
         } ~
-            (path("accrue" / IntNumber / IntNumber) { (accountId, value) =>
-                val command = AccountUpdate(accountId, value)
-                streams.produceCommand(command)
-                complete(command)
-            }) ~
-            (path("withdraw" / IntNumber / IntNumber) { (accountId, value) =>
-                val command = AccountUpdate(accountId, -value)
-                streams.produceCommand(command)
-                complete(command)
-            }) ~
-            (path("create" / IntNumber ) { (accountId) =>
-                val command = AccountCreate(accountId)
-                streams.produceCommand(command)
-                complete(command)
-            }) ~
-            (path("transfer") & post & entity(as[TransferStart])) { transfer =>
-                repository.transfer(transfer)
-                complete(transfer)
-            }
+          (path("accrue" / IntNumber / IntNumber) { (accountId, value) =>
+              val command = AccountUpdate(accountId, value)
+              streams.produceCommand(command)
+              complete(command)
+          }) ~
+          (path("withdraw" / IntNumber / IntNumber) { (accountId, value) =>
+              val command = AccountUpdate(accountId, -value)
+              streams.produceCommand(command)
+              complete(command)
+          }) ~
+          (path("create" / IntNumber ) { (accountId) =>
+              val command = AccountCreate(accountId)
+              streams.produceCommand(command)
+              complete(command)
+          }) ~
+          (path("transfer") & post & entity(as[TransferStart])) { transfer =>
+              repository.transfer(transfer)
+              complete(transfer)
+          }
 }
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/account/.idea/modules/account.iml" filepath="$PROJECT_DIR$/lite-bank/account/.idea/modules/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/account/.idea/modules/account-build.iml" filepath="$PROJECT_DIR$/lite-bank/account/.idea/modules/account-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/account/.idea/modules/common.iml" filepath="$PROJECT_DIR$/lite-bank/account/.idea/modules/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/account/.idea/modules/common-build.iml" filepath="$PROJECT_DIR$/lite-bank/account/.idea/modules/common-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/fee/.idea/modules/fee-build.iml" filepath="$PROJECT_DIR$/lite-bank/fee/.idea/modules/fee-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/operation/.idea/modules/operation.iml" filepath="$PROJECT_DIR$/lite-bank/operation/.idea/modules/operation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/operation/.idea/modules/operation-build.iml" filepath="$PROJECT_DIR$/lite-bank/operation/.idea/modules/operation-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/lite-bank/cashback/.idea/modules/template-build.iml" filepath="$PROJECT_DIR$/lite-bank/cashback/.idea/modules/template-build.iml" group="sbt-build-modules" />
+    </modules>
+  </component>
+</project>

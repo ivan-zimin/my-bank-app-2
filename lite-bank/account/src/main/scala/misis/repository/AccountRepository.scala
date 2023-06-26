@@ -2,6 +2,8 @@ package misis.repository
 
 import misis.model._
 
+import scala.concurrent.Future
+
 
 class AccountRepository(val startAccountId: Int, val endAccountId: Int) {
 
@@ -21,19 +23,25 @@ class AccountRepository(val startAccountId: Int, val endAccountId: Int) {
         TransferStarted(command.to, command.amount, withdraw.success)
     }
 
-    def transferAccrue(event: TransferStarted): Unit = {
-        if(event.isSuccess){
+    def transferAccrue(event: TransferStarted): AccountUpdated = {
+        /*if(event.isSuccess){
             val accrue: AccountUpdated = updateAccount(event.to, event.amount)
             printUpdateResult(accrue)
-        }
+        }*/
+      if (event.isSuccess) {
+        updateAccount(event.to, event.amount)
+      } else {
+        AccountUpdated(accountId = event.to, value = event.amount, success = false)
+      }
     }
 
-    def printUpdateResult(res: AccountUpdated) =
+    def printUpdateResult(res: AccountUpdated) = {
         println(s"Account ${res.accountId} updated successful ${res.success}" +
             s" with value ${res.value} " +
             s"Balance: ${getBalance(res.accountId)}")
+    }
 
-    def updateAccount(accountId: Int, value: Int): AccountUpdated = {
+  def updateAccount(accountId: Int, value: Int): AccountUpdated = {
         val idx = accounts.indexWhere(_.id == accountId)
         val accountBefore = accounts(idx)
         if (accountBefore.amount + value >= 0) {

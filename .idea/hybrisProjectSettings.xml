@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HybrisProjectSettings">
+    <option name="moduleSettings">
+      <map>
+        <entry key="account">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="account-build">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="cashback">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="common">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="common-build">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="fee">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="misis-scala-22-master">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="operation">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="operation-build">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+        <entry key="template-build">
+          <value>
+            <ModuleSettings />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

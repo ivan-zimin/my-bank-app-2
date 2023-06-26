@@ -10,11 +10,11 @@ import scala.concurrent.ExecutionContext
 
 class AccountRoute(repository: AccountRepository)(implicit ec: ExecutionContext) extends FailFastCirceSupport {
 
-    def routes =
-        (path("healthcheck") & get) {
-            complete("ok")
-        } ~
-          (path("account_get" / IntNumber) { (accountId) =>
-              complete(repository.getAccInfo(accountId))
-          })
+  def routes =
+    (path("healthcheck") & get) {
+      complete("ok")
+    } ~
+      (path("account_get" / IntNumber) { (accountId) =>
+        complete(repository.getAccInfo(accountId))
+      })
 }

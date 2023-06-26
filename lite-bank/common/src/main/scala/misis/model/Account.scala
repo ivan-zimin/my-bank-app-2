@@ -16,16 +16,16 @@ case class AccountCreate(accountId: Int) extends Command
 
 
 case class AccountUpdated(
-                             operationId: UUID = UUID.randomUUID(),
+                             //operationId: UUID = UUID.randomUUID(),
                              accountId: Int,
                              value: Int,
                              success: Boolean,
-                             publishedAt: Option[Instant] = Some(Instant.now())
+                             //publishedAt: Option[Instant] = Some(Instant.now())
                          ) extends Event
 
 case class AccountCreated(
-                             operationId: UUID = UUID.randomUUID(),
+                             //operationId: UUID = UUID.randomUUID(),
                              accountId: Int,
                              success: Boolean,
-                             publishedAt: Option[Instant] = Some(Instant.now())
+                             //publishedAt: Option[Instant] = Some(Instant.now())
                          ) extends Event

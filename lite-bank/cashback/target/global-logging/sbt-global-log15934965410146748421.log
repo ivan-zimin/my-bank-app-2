@@ -1,0 +1,239 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.7.2 (Oracle Corporation Java 18)
+[debug]       Load.loadUnit: plugins took 56.370083ms
+[debug]       Load.loadUnit: defsScala took 0.116083ms
+[debug] [Loading] Scanning directory /Users/ivan/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ivan/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 46.767292 ms
+[debug]           Load.resolveProject(global-plugins) took 69.516458ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/ivan/.sbt/1.0/plugins, plugins: List(<none>))) took 129.159083ms
+[debug] [Loading] Done in /Users/ivan/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 230.778584ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.13225ms
+[debug]     Load.loadUnit(file:/Users/ivan/.sbt/1.0/plugins/, ...) took 292.305291ms
+[debug]   Load.apply: load took 741.680625ms
+[debug]   Load.apply: resolveProjects took 2.43975ms
+[debug]   Load.apply: finalTransforms took 74.508125ms
+[debug]   Load.apply: config.delegates took 7.183375ms
+[debug]   Load.apply: Def.make(settings)... took 307.894583ms
+[debug]   Load.apply: structureIndex took 118.845167ms
+[debug]   Load.apply: mkStreams took 0.675125ms
+[info] loading global plugins from /Users/ivan/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2951.9995ms
+[debug]           Load.loadUnit: plugins took 11.166084ms
+[debug]           Load.loadUnit: defsScala took 0.001959ms
+[debug] [Loading] Scanning directory /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/project
+[debug]             Load.loadUnit: mkEval took 2.784542ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.100625 ms
+[info] loading settings for project cashback-build from plugins.sbt ...
+[debug]               Load.resolveProject(cashback-build) took 1.436917ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id cashback-build, base: /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/project, plugins: List(<none>))) took 2.863291ms
+[debug] [Loading] Done in /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/project, returning: (cashback-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 119.256417ms
+[debug]           Load.loadUnit: cleanEvalClasses took 3.836208ms
+[debug]         Load.loadUnit(file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/project/, ...) took 135.12275ms
+[debug]       Load.apply: load took 135.889083ms
+[debug]       Load.apply: resolveProjects took 0.070333ms
+[debug]       Load.apply: finalTransforms took 23.927834ms
+[debug]       Load.apply: config.delegates took 0.565667ms
+[debug]       Load.apply: Def.make(settings)... took 124.472209ms
+[debug]       Load.apply: structureIndex took 45.596417ms
+[debug]       Load.apply: mkStreams took 0.005166ms
+[info] loading project definition from /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 858.453209ms
+[debug]     Load.loadUnit: defsScala took 0.002083ms
+[debug] [Loading] Scanning directory /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback
+[debug]       Load.loadUnit: mkEval took 0.111625ms
+[debug] [Loading] Found root project template w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,sbt.plugins.IvyPlugin,sbt.plugins.Giter8TemplatePlugin,com.typesafe.sbt.packager.debian.DebianPlugin,sbt.plugins.JvmPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin,com.typesafe.sbt.SbtNativePackager)
+[debug] Plugins.deducer#function took 7.762917 ms
+[info] loading settings for project template from build.sbt ...
+[debug]         Load.resolveProject(template) took 67.527458ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id template, base: /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback, dependencies: List(ClasspathDependency(ProjectRef(../common,common),None)), plugins: List(<none>))) took 77.198208ms
+[debug] [Loading] Done in /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback, returning: (template)
+[debug]     Load.loadUnit: loadedProjectsRaw took 212.080708ms
+[debug]     Load.loadUnit: cleanEvalClasses took 11.694916ms
+[debug]   Load.loadUnit(file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/, ...) took 1082.911ms
+[debug]           Load.loadUnit: plugins took 34.798917ms
+[debug]           Load.loadUnit: defsScala took 0.003125ms
+[debug] [Loading] Scanning directory /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/project
+[debug]             Load.loadUnit: mkEval took 0.1175ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.710875 ms
+[info] loading settings for project common-build from plugins.sbt ...
+[debug]               Load.resolveProject(common-build) took 0.763708ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id common-build, base: /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/project, plugins: List(<none>))) took 1.736875ms
+[debug] [Loading] Done in /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/project, returning: (common-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 7.616209ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.372292ms
+[debug]         Load.loadUnit(file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/project/, ...) took 43.623833ms
+[debug]       Load.apply: load took 44.182291ms
+[debug]       Load.apply: resolveProjects took 0.071417ms
+[debug]       Load.apply: finalTransforms took 77.347166ms
+[debug]       Load.apply: config.delegates took 0.240583ms
+[debug]       Load.apply: Def.make(settings)... took 183.004833ms
+[debug]       Load.apply: structureIndex took 27.956167ms
+[debug]       Load.apply: mkStreams took 0.001667ms
+[info] loading project definition from /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 547.345167ms
+[debug]     Load.loadUnit: defsScala took 0.003875ms
+[debug] [Loading] Scanning directory /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common
+[debug]       Load.loadUnit: mkEval took 0.770125ms
+[debug] [Loading] Found root project common w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))
+[debug] Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,sbt.plugins.IvyPlugin,sbt.plugins.Giter8TemplatePlugin,com.typesafe.sbt.packager.debian.DebianPlugin,sbt.plugins.JvmPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin,com.typesafe.sbt.SbtNativePackager)
+[debug] Plugins.deducer#function took 2.180167 ms
+[info] loading settings for project common from build.sbt ...
+[debug]         Load.resolveProject(common) took 1.058416ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id common, base: /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common, plugins: List(<none>))) took 3.673ms
+[debug] [Loading] Done in /Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common, returning: (common)
+[debug]     Load.loadUnit: loadedProjectsRaw took 46.161209ms
+[debug]     Load.loadUnit: cleanEvalClasses took 2.779917ms
+[debug]   Load.loadUnit(file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/common/, ...) took 597.606584ms
+[debug] Load.apply: load took 1725.585959ms
+[debug] Load.apply: resolveProjects took 23.443792ms
+[debug] Load.apply: finalTransforms took 73.64425ms
+[debug] Load.apply: config.delegates took 6.022958ms
+[debug] Load.apply: Def.make(settings)... took 212.9075ms
+[debug] Load.apply: structureIndex took 85.633625ms
+[debug] Load.apply: mkStreams took 0.0045ms
+[info] set current project to template (in build file:/Users/ivan/Desktop/scripts/Scala2/misis-scala-22-master/lite-bank/cashback/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[warn] sbt server could not start because there's another instance of sbt running on this build.
+[warn] Running multiple instances is unsupported
